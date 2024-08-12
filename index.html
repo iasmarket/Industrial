@@ -1,4 +1,128 @@
-1
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Page</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .datetime {
+            text-align: center;
+            color: gray;
+        }
+
+        .date, .time {
+            font-size: 48px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 7cm);
+        }
+
+        .product {
+            width: calc(100% / 4);
+            margin-bottom: 20px;
+            text-align: center;
+            border: 1px solid red;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            color: white;
+        }
+
+        .product .content {
+            height: 200px;
+            overflow: hidden;
+        }
+
+.product img {
+    width: 100%;
+    height: 200px; /* Ajuste la hauteur selon tes besoins */
+    object-fit: cover; /* Ajuste l'image pour qu'elle remplisse le conteneur */
+}
+
+
+        .product .description {
+            margin-top: 10px;
+        }
+
+        .product .more-link {
+            margin-top: 5px;
+            cursor: pointer;
+            color: blue;
+        }
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .pagination a {
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            background-color: gray;
+            margin: 0 4px;
+            border-radius: 4px;
+        }
+
+        .pagination a:hover {
+            background-color: #575757;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            .product {
+                width: calc(100% / 3);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .product {
+                width: 100%;
+            }
+        }
+
+        /* Style pour le bouton flottant */
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="datetime">
+        <div class="date" id="comment"></div>
+        <div class="date" id="date"></div>
+        <div class="time" id="time"></div>
+    </div>
+
+    <div class="container">
+      
+
 
 <div class="product"><a href="https://www.amazon.com/dp/B0B4DH2K9M?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41PjRlYpOIL._SL500_.jpg" alt="Product Image"></a><p>[100 Count] Clear Plastic Forks Heavy Duty, Premium Disposable Forks, Durable Plastic Cutlery for Parties, Picnics, Big Event, Daily Use - Heat Resistant & BPA Free</p><p>$6.99</p><a href="https://www.amazon.com/dp/B0B4DH2K9M?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0BPM26K4W?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51lq2mIP7iL._SL500_.jpg" alt="Product Image"></a><p>360 Count Plastic Silver Ware Heavy Duty, 120 Forks, 120 Spoons, 120 Knives, Heat Resistant & BPA Free Disposable SilverWare, Disposable Cutlery set, Premium Clear Utencils for Party Supply</p><p>$19.99</p><a href="https://www.amazon.com/dp/B0BPM26K4W?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0CZJ4G4L9?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41JhaO2sBzL._SL500_.jpg" alt="Product Image"></a><p>Dealusy 100 Count Clear Plastic Spoons Disposable, BPA-Free, Heat Resistant, Solid and Durable Disposable Spoons Heavy Duty Bulk, Premium Spoons plastic disposable for Party Supply</p><p>$6.99</p><a href="https://www.amazon.com/dp/B0CZJ4G4L9?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B085T6685R?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41RbX0YJ2PL._SL500_.jpg" alt="Product Image"></a><p>POSATE Heavy Weight Plastic Forks, Clear Disposable, 100 Count</p><p>$9.97</p><a href="https://www.amazon.com/dp/B085T6685R?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0CBQFKXP2?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41VpEpWpC6L._SL500_.jpg" alt="Product Image"></a><p>Dealusy 360 Count Extra Heavy Duty Clear Plastic Forks Disposable, BPA-Free, Heat Resistant, Solid and Durable Disposable Forks Bulk, Premium Plastic Forks heavy duty for Party Supply</p><p>$19.99</p><a href="https://www.amazon.com/dp/B0CBQFKXP2?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div>
 
@@ -149,5 +273,45 @@
 
 <div class="product"><a href="https://www.amazon.com/dp/B08FM67ZCK?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41Hlpw7evvL._SL500_.jpg" alt="Product Image"></a><p>Banded Earplugs for Shooting Range Band Ear Plugs Lightweight Silicone Earplugs for Hearing Protection, Noise Reduction, Work, Construction, Sleeping, Concerts, Motor Sports Racing (4 Pieces)</p><p>$5.26 ($1.32 / Count)</p><a href="https://www.amazon.com/dp/B08FM67ZCK?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B000DZF7T6?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/415SapNl3yL._SL500_.jpg" alt="Product Image"></a><p>Peltor Sport Tri-Flange Corded Reusable Earplugs, 3 Pair, Noise Reduction Rating (NRR) 26 dB, Comfortable Fit, Ideal For Range, Shooting & Hunting, Washable and Corded, Neon Yellow (97317-10C)</p><p>$9.56 ($3.19 / Count)</p><a href="https://www.amazon.com/dp/B000DZF7T6?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div>
 
+    </div>
 
-2
+    <!-- Bouton flottant -->
+    <button class="floating-button" onclick="window.location.href='https://www.iasmarket.us'">HOME</button>
+<div class="pagination">
+        <a href=" ">0</a>
+        <!-- Ajoutez plus de liens si nécessaire -->
+    </div>
+    <script>
+        function updateTime() {
+            const optionsDate = {
+                timeZone: 'America/Los_Angeles',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                weekday: 'long'
+            };
+            const optionsTime = {
+                timeZone: 'America/Los_Angeles',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+
+            const now = new Date();
+            const formatterDate = new Intl.DateTimeFormat('en-US', optionsDate);
+            const formatterTime = new Intl.DateTimeFormat('en-US', optionsTime);
+
+            const formattedDate = formatterDate.format(now);
+            const formattedTime = formatterTime.format(now);
+
+            document.getElementById('comment').textContent = "As an AMAZON Associate, I earn from qualifying purchases.";
+            document.getElementById('date').textContent = formattedDate;
+            document.getElementById('time').textContent = formattedTime;
+        }
+
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+
+</html>
